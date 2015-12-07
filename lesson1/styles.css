@@ -16,36 +16,42 @@
 	background-color: #ffffff;
 }
 .title {
-	margin: 50px auto 30px;
+	margin: 50px auto 20px;
 	text-align: center;
+	font-size: 25px;
 }
 .photo {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto 15px;
+    margin: 0 auto 0;
     border: none;
 }
-.main-tezis {
+.main-content {
+	margin-top: 10px;
 	margin-left: 65px;
+	margin-bottom: 20px;
 	line-height: 20px;
 	font-weight: normal;
 }
 hr {
 	width: 415px;
-	margin: 20px auto 30px;
+	margin: 0 auto 20px;
 
 }
 .arguments {
-	margin-left: 70px;
+	margin-left: 85px;
 	margin-top: 30px;
+	margin-bottom: 20px;
 }
 .argument {
 	margin-top: 10px;
 }
-br {
-	margin-top: 20px;
+p, a {
+	margin-left: 65px;
+	margin-top: 0;
 }
-.phone {
-	margin-bottom: 40px;
+a {
+	margin-bottom: 20px;
+	display: block;
 }
