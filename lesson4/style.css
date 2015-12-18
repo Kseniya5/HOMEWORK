@@ -16,12 +16,14 @@ ul {
 .wrapper {
 	margin: 0 auto;
 	width: 1000px;
-	height: 990px;
+	height: 975px;
 	background-color: #ffffff;
 	border-bottom: 3px solid #031d28;
 }
 .footer {
+	margin: 0 auto;
 	height: 30px;
+	width: 1000px;
 	line-height: 30px;
 	vertical-align: middle;
 	text-align: center;
@@ -121,23 +123,24 @@ ul {
 	padding-bottom: 0;
 }
 .menu {
-	padding-left: 60px;	
+	width: 1000px;	
 	height: 30px;
 	border-top: 1px solid #cacbcb;
 	border-bottom: 1px solid #000000;
+	text-align: center;
 	background-color: #333333;
 	-webkit-box-shadow: 0px 4px 4px 0px rgba(85, 85, 85, 0.5);
 	-moz-box-shadow:    0px 4px 4px 0px rgba(85, 85, 85, 0.5);
 	box-shadow:         0px 4px 4px 0px rgba(85, 85, 85, 0.5);
-	position: relative;
 	z-index: 1;
 }
 .menu li {
 	display: inline-block;
+	position: relative;
 }
 .menu li a {
-	margin-left: 5px;
-	margin-right: 55px;
+	margin-left: 30px;
+	margin-right: 30px;
 	padding-top: 7px;
 	height: 23px;
 	display: block;
@@ -164,12 +167,10 @@ ul {
 .menu li ul {
 	display: none;
 	position: absolute;
-	left: inherit;
+	left: 0;
 	top: 30px;
-	padding-left: 10px;
 	padding-bottom: 10px; 
 	width: 140px;
-	height: 120px;
 	background-color: #303030;
 	-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow:    0px 5px 5px 0px rgba(0, 0, 0, 0.75);
@@ -181,6 +182,7 @@ ul {
 	background: none;
 }	
 .menu li ul li a {
+	margin: 0 auto;
 	display: block;
 	font: normal 14px/24px Tahoma;
 	color: #ffffff;
