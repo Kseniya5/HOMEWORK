@@ -142,7 +142,7 @@ ul {
 	background: url(img/facebook.png);
 }
 form span {
-	margin-bottom: 30px;
+	margin-bottom: 35px;
 	display: inline-block;
 	text-transform: uppercase;
 	font: normal 14px 'helveticaneuelight', Tahoma, serif;
@@ -167,7 +167,7 @@ form .after {
 	border-bottom: 1px solid #000000;
 }
 form input {
-	margin-bottom: 25px;
+	margin-bottom: 24px;
 	padding-left: 20px;
 	width: 255px;
 	height: 30px;
@@ -197,17 +197,59 @@ form input:hover {
 	box-shadow: 0px 0px 9px 5px rgba(47,123,197,0.77);
 }
 input[type="checkbox"] {
-	padding-left: 0;
+	display: none;
+}
+label:before {
 	margin-right: 10px;
-	background: url(img/box.png);
+	content: "";
+	display: inline-block;
 	width: 13px;
 	height: 13px;
-	box-shadow: none;
-}
-input[type="checkbox"]:hover {
-	box-shadow: none;	
+	position: absolute;
+	left: -10px;
+	bottom: 1px;
+	background-image: url(img/box.png);
 }
 label {
 	display: inline-block;
-	line-height: 14px;
+	cursor: pointer;
+	position: relative;
+	padding-left: 10px;
+	font-size: 14px;
+}
+input[type=checkbox]:checked + label:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 13px;
+	color: black;
+	text-align: center;
+    line-height: 13px;
+}
+.checkbox {
+	margin-left: -30px;
+}
+input[type=submit] {
+	padding-left: 0;
+	width: 148px;
+	height: 33px;
+	border-radius: 3px;
+	border: 1px solid #65a8e4;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,50aedb+0,207cca+100,7db9e8+100,2e7ac4+100 */
+	background: rgb(30,87,153); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(80,174,219,1) 0%, rgba(32,124,202,1) 100%, rgba(125,185,232,1) 100%, rgba(46,122,196,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(80,174,219,1) 0%,rgba(32,124,202,1) 100%,rgba(125,185,232,1) 100%,rgba(46,122,196,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(80,174,219,1) 0%,rgba(32,124,202,1) 100%,rgba(125,185,232,1) 100%,rgba(46,122,196,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */
+}
+input[type=submit]:hover {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,50aedb+0,207cca+100,7db9e8+100,2e7ac4+100 */
+	background: rgb(30,87,153); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(80,174,219,1) 0%, rgba(32,124,202,1) 100%, rgba(125,185,232,1) 100%, rgba(46,122,196,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(80,174,219,1) 0%,rgba(32,124,202,1) 100%,rgba(125,185,232,1) 100%,rgba(46,122,196,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(80,174,219,1) 0%,rgba(32,124,202,1) 100%,rgba(125,185,232,1) 100%,rgba(46,122,196,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */
+	box-shadow: none;
+}
+form p {
+	font-size: 11px;
 }
