@@ -16,13 +16,22 @@ ul {
 	width: 500px;
 }
 td {
-	border: 10px solid #483b31;
+	border: none;
+	border-collapse: collapse;
+	border-left: 10px solid #483b31;
+	border-top: 10px solid #483b31;
 }
 table {
 	border-collapse: collapse;
 	height: 540px;
 	width: 500px;
-	border: 10px solid #ffffff;
+	border: none;
+}
+table tr:first-child td {
+	border-top: none;
+}
+table tr td:first-child {
+	border-left: none;
 }
 .yellow {
 	background-color: #fffa60; 
