@@ -154,41 +154,41 @@ ul {
 	color: #ffffff;
 }
 .facebookbutton {
-	margin: 35px auto 30px;
+	margin: 40px auto 30px;
 	display: block;
 	width: 276px;
 	height: 35px;
 	background: url(img/facebook.png);
 }
-form div {
-	margin-bottom: 25px;
+form .or {
+	margin-bottom: 30px;
 	display: inline-block;
+	position: relative;
 	text-transform: uppercase;
 	font: normal 14px 'helveticaneuelight', Tahoma, serif;
 	color: #999999;
 }
-form .or:before {
+.or:before, .or:after{
 	content: "";
-	margin-right: 5px;
-	display: inline-block;
+	position: absolute;	
+	top: 5px;
+	display: block;
 	vertical-align: middle;
-	width: 125px;
+	width: 100%;
 	height: 1px;
 	background-color: #666666;
 	border-bottom: 1px solid #000000;
 }
-form .or:after {
-	content: "";
+.or:before {
+	right: 100%;
+	margin-right: 5px;
+}
+.or:after {
+	left: 100%;
 	margin-left: 5px;
-	display: inline-block;
-	vertical-align: middle;
-	width: 125px;
-	height: 1px;
-	background-color: #666666;
-	border-bottom: 1px solid #000000;
 }
 form input {
-	margin-bottom: 24px;
+	margin-bottom: 23px;
 	padding-left: 20px;
 	width: 255px;
 	height: 30px;
@@ -247,9 +247,11 @@ input[type=checkbox]:checked + label:before {
     line-height: 13px;
 }
 .checkbox {
-	margin-left: 10px;
+	margin-left: -35px;
 }
 input[type=submit] {
+	margin-top: 9px;
+	margin-bottom: 20px;
 	padding-left: 0;
 	width: 148px;
 	height: 33px;
@@ -273,4 +275,5 @@ input[type=submit]:hover {
 }
 form p {
 	font-size: 11px;
+	line-height: 15px;
 }
