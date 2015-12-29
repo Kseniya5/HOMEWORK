@@ -161,32 +161,32 @@ ul {
 	background: url(img/facebook.png);
 }
 form .or {
-	margin-bottom: 30px;
-	display: inline-block;
-	position: relative;
+	margin-bottom: 16px;
+	overflow: hidden;
+	text-align: center;
 	text-transform: uppercase;
 	font: normal 14px 'helveticaneuelight', Tahoma, serif;
 	color: #999999;
 }
 .or:before, .or:after{
 	content: "";
-	position: absolute;	
-	top: 5px;
-	display: block;
 	vertical-align: middle;
-	width: 100%;
+	display: inline-block;
 	height: 1px;
 	background-color: #666666;
 	border-bottom: 1px solid #000000;
 }
 .or:before {
-	right: 100%;
+	padding-right: 22%;
 	margin-right: 5px;
+	margin-left: 110px;
 }
 .or:after {
-	left: 100%;
+	padding-left: 22%;
 	margin-left: 5px;
+	margin-right: 110px;
 }
+
 form input {
 	margin-bottom: 23px;
 	padding-left: 20px;
