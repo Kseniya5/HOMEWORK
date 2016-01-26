@@ -16,13 +16,11 @@ ul {
 .wrapper {
 	margin: 0 auto;
 	width: 1000px;
-	height: 975px;
 	background-color: #ffffff;
 	border-bottom: 3px solid #031d28;
 }
 .footer {
 	margin: 0 auto;
-	height: 30px;
 	width: 1000px;
 	line-height: 30px;
 	vertical-align: middle;
@@ -56,7 +54,6 @@ ul {
     position: relative;
 }
 .header {
-	height: 175px;
 	position: relative;
 }
 .logo {
@@ -89,10 +86,7 @@ ul {
 }
 .countres li {
 	float: left;
-	padding-left: 15px;
-}
-.countres li:last-child {
-	padding-left: 5px;
+	margin-left: 15px;
 }
 .countres img {
 	display: block;
@@ -102,6 +96,9 @@ ul {
 	text-align: center;
 	font: normal 10px Tahoma;
 	color: #128aa7;
+}
+.countres span {
+	margin-left: -12px;
 }
 .clearfix:after {    
 	content: ".";
@@ -113,9 +110,6 @@ ul {
 .clearfix {
 	zoom: 1;
 }
-.clear {
-	clear: both;
-}
 .beachphoto {
 	height: 235px;
 	border-top: solid 1px #128aa7;
@@ -124,7 +118,7 @@ ul {
 }
 .menu {
 	width: 1000px;	
-	height: 30px;
+	line-height: 30px;
 	border-top: 1px solid #cacbcb;
 	border-bottom: 1px solid #000000;
 	text-align: center;
@@ -142,7 +136,6 @@ ul {
 	margin-left: 30px;
 	margin-right: 30px;
 	padding-top: 7px;
-	height: 23px;
 	display: block;
 	text-decoration: none;
 	font: normal 14px Tahoma;
@@ -194,7 +187,6 @@ ul {
 	width: 1000px;
 	background-image: url(img/backgroundcontent.png);
 	background-repeat: repeat-y;
-	float: left;
 	}
 .info {
 	width: 175px;

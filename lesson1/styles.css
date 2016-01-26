@@ -10,8 +10,8 @@
 }
 .wrapper {
 	margin: 0 auto 0;
+	padding-bottom: 50px;
 	width: 515px;
-	height: 750px;
 	border: 1px solid #cecece;
 	background-color: #ffffff;
 }
@@ -29,6 +29,7 @@
 }
 .main-content {
 	margin-top: 10px;
+	margin-right: 65px;
 	margin-left: 65px;
 	margin-bottom: 20px;
 	line-height: 20px;
@@ -38,6 +39,9 @@ hr {
 	width: 415px;
 	margin: 0 auto 20px;
 
+}
+ul {
+	margin-right: 65px;
 }
 .arguments {
 	margin-left: 85px;
@@ -49,6 +53,7 @@ hr {
 }
 p, a {
 	margin-left: 65px;
+	margin-right: 65px;
 	margin-top: 0;
 }
 a {
