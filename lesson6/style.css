@@ -241,6 +241,9 @@ nav .basket :nth-child(3) {
 .catalog, .left-bar h3 {
 	display: inline-block;
 }
+.left-bar {
+	width: 195px;
+}
 h3 {
 	margin-top: 20px;
 	margin-bottom: 15px;
@@ -284,7 +287,7 @@ h5 {
 	display: block;
 	width: 150px;
 	border: 1px solid #79878d;
-	border-radius: 10px;
+	border-radius: 12px;
 	font: normal 15px "Lucida Sans Unicode";
 	color: #114165;
 }
@@ -319,12 +322,13 @@ h5 {
 	font: normal 13px/13px "Lucida Sans Unicode";
 	text-decoration: none;
 	color: #465961;
+	border-bottom: solid 2px transparent;
 }
 .left-bar ul li a:hover {
 	margin: 0;
 	padding: 0;
 	display: inline-block;
-	font: italic bold 13px Arial;
+	font: italic bold 12px Arial;
 	color: #0c3256;
 	border-bottom: solid 2px #58697f;
 }
