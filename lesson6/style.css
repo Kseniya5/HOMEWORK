@@ -189,14 +189,14 @@ nav {
 	box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 }
 nav ul {
-	margin-left: 125px;
+	margin-left: 133px;
 	float: left;
 }
 nav ul li {
 	display: inline-block;
 }
 nav ul a {
-	padding: 2px 15px;
+	padding: 2px 14px;
 	font: normal 14px "Lucida Sans Unicode";
 	letter-spacing: -0.5px;
 	color: #b1bcc0;
@@ -242,7 +242,7 @@ nav .basket :nth-child(3) {
 	display: inline-block;
 }
 .left-bar {
-	width: 195px;
+	width: 193px;
 }
 h3 {
 	margin-top: 20px;
@@ -308,27 +308,30 @@ h5 {
 	background: url(img/marker.png) no-repeat;
 }
 .left-bar ul {
-	margin-top: 8px;
+	margin-top: 5px;
 }
 .left-bar ul li {
 	margin-left: 35px;
-	margin-bottom: 12px;
+	margin-bottom: 6px;
 }
 .left-bar ul li:last-child {
 	margin-bottom: 3px;
 }
 .left-bar ul li a {
 	display: block;
-	font: normal 13px/13px "Lucida Sans Unicode";
+	height: 18px;
+	font: normal 13px/18px "Lucida Sans Unicode";
 	text-decoration: none;
-	color: #465961;
+	color: #465961;	
+}
+.left-bar ul li a .menu-item-name {
 	border-bottom: solid 2px transparent;
 }
-.left-bar ul li a:hover {
+.left-bar ul li a:hover .menu-item-name{
 	margin: 0;
 	padding: 0;
 	display: inline-block;
-	font: italic bold 12px Arial;
+	font: italic bold 13px Arial;
 	color: #0c3256;
 	border-bottom: solid 2px #58697f;
 }
@@ -336,6 +339,228 @@ ul li a:hover .marker {
 	background: url(img/marker-hover.png) no-repeat;
 	border-bottom: none;
 }
-ul a .marker {
+.left-bar, .content, .right-bar {
+	float: left;
+}
+.content {
+	margin-top: 15px;
+	padding: 16px 0px 0px 20px;
+	width: 505px; 
+	border-radius: 3px 2px 2px 3px;
+	background: rgba(201,207,209,1);
+	background: -moz-linear-gradient(top, rgba(201,207,209,1) 0%, rgba(35,75,93,0.49) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(201,207,209,1)), color-stop(100%, rgba(35,75,93,0.49)));
+	background: -webkit-linear-gradient(top, rgba(201,207,209,1) 0%, rgba(35,75,93,0.49) 100%);
+	background: -o-linear-gradient(top, rgba(201,207,209,1) 0%, rgba(35,75,93,0.49) 100%);
+	background: -ms-linear-gradient(top, rgba(201,207,209,1) 0%, rgba(35,75,93,0.49) 100%);
+	background: linear-gradient(to bottom, rgba(201,207,209,1) 0%, rgba(35,75,93,0.49) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9cfd1', endColorstr='#234b5d', GradientType=0 );
+	border-top: 1px solid #f3f4f4;
+	border-left: 1px solid #f9f9fa;
+	border-bottom: 1px solid #a1b3bb;
+}
+.content figure {
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 25px;
+}
+.box-for-image {
+	width: 136px;
+	height: 127px;
+	display: block;
+	border-left: 1px solid #a7b1b4;
+	border-top: 1px solid #b0b9bc;
+	border-right: 1px solid #aeb7ba;
+	border-bottom: 1px solid #a7b1b4;
+	border-radius: 8px;
+	background-color: #fff;
+}
+.box-for-image img {
+	margin: 3px auto;
+	display: block;
+}
+.content figcaption {
+	width: 137px;
+	text-align: center;
+	display: inline-block;
+	font: normal 14px/14px "Lucida Sans Unicode";
+	color: #1f2528;
+}
+figcaption .blue-name {
+	font: normal 16px/14px "Lucida Sans Unicode";
+	color: #206988;
+}
+.content .price {
+	padding-top: 8px;
+	width: 137px;
+	text-align: center;
+	display: inline-block;
+	font: italic 17px/10px Arial;
+	font-weight: bold;
+	color: #114165;
+}
+.right-bar {
+	margin-left: 9px;
+}
+.right-bar h5 {
+	margin-left: 15px;
+	margin-top: 18px;
+}
+.right-bar input, .right-bar label {
+	margin-left: 25px;
+	font: normal 13px/13px "Lucida Sans Unicode";
+	vertical-align: middle;
+	color: #465961;
+}
+.right-bar button {
+	margin-left: 23px;
+}
+.right-bar h5 {
+	margin-bottom: 5px;
+	width: 135px;
+}
+.right-bar input + .right-bar h5 {
+	margin-top: 14px;
+}
+input[type="checkbox"] {
+	display: none;
+}
+label:before {
+	margin-right: 15px;
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 11px;
+	line-height: 13px;
+	background-image: url(img/checkbox.png);
+}
+label {
+	display: inline-block;
+	cursor: pointer;
+}
+input[type=checkbox]:checked + label:before {
+	content: "\2713";
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 10px;
+	color: black;
+	text-align: center;
+    line-height: 10px;
+}
+.checkbox {
+	margin-left: 0;
+	margin-bottom: -7px;
+}
+.right-bar button {
+	margin-top: 15px;
+	border-radius: 9px;
+	width: 80px;
+	height: 25px;
+	border-top: 1px solid #7a95a1;
+	border-bottom: 1px solid #697b8b;
+	border-left: 1px solid #a7abae;
+	border-right: 1px solid #a7abae;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#206988+0,114165+59,0c3256+100 */
+	background: #206988; /* Old browsers */
+	background: -moz-linear-gradient(top,  #206988 0%, #114165 59%, #0c3256 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #206988 0%,#114165 59%,#0c3256 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #206988 0%,#114165 59%,#0c3256 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206988', endColorstr='#0c3256',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow: 1px 3px 3px 0px rgba(190,192,193,1);
+	-moz-box-shadow: 1px 3px 3px 0px rgba(190,192,193,1);
+	box-shadow: 1px 3px 3px 0px rgba(190,192,193,1);
+	font: normal 11px/25px Arial;
+	vertical-align: middle;
+	color: #e5e9ea;
+}
+.menu-labels ul {
+	margin-top: 40px;
+	margin-bottom: 23px;
+	text-align: center;
+}
+.menu-labels ul li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 7px;
+}
+.menu-labels ul li:last-child {
+	margin-right: 0;
+}
+.menu-labels a {
+	display: block;
+}
+.toyo-tires {
+	width: 83px;
+	height: 20px;
+	background: url(img/toyo-tires.png) no-repeat;
+}
+.bridgestone {
+	width: 95px;
+	height: 15px;
+	background: url(img/bridgestone.png) no-repeat;
+}
+.continental-tire {
+	width: 78px;
+	height: 22px;
+	background: url(img/continental-tire.png) no-repeat;
+}
+.cooper {
+	width: 60px;
+	height: 22px;
+	background: url(img/cooper.png) no-repeat;
+}
+.avon {
+	width: 77px;
+	height: 15px;
+	background: url(img/avon.png) no-repeat;
+}
+.tire-factory {
+	width: 59px;
+	height: 28px;
+	background: url(img/tire-factory.png) no-repeat;
+}
+.pirelli {
+	width: 61px;
+	height: 16px;
+	background: url(img/pirelli.png) no-repeat;
+}
+.dunlop {
+	width: 72px;
+	height: 11px;
+	background: url(img/dunlop.png) no-repeat;
+}
+footer {
+	padding-bottom: 50px;
+	border-top: 1px solid #242c3e;
+	border-right: 1px solid #242a3c;
+	border-left: 1px solid #223346;
+	-webkit-box-shadow: 1px 0px 1px 0px rgba(126,130,140,1);
+	-moz-box-shadow: 1px 0px 1px 0px rgba(126,130,140,1);
+	box-shadow: 1px 0px 1px 0px rgba(126,130,140,1);
+	background-color: #213a4d; 
+}
+footer ul {
+	text-align: center;
+	padding-top: 10px;
+}
+footer ul li {
+	display: inline-block;
+	padding: 0 12px;
+	border-right: 1px solid #bec6c9;
 	
+}
+footer ul li a {
+	display: block;
+	font: normal 13px/13px Arial;
+	color: #bec6c9;
+}
+footer ul li a:hover {
+	color: #52abcb;
+}
+footer p {
+	margin-top: 15px;
+	text-align: center;
+	font: normal 10px Arial;
+	color: #7f4740;
 }
