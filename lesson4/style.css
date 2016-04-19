@@ -22,7 +22,7 @@ ul {
 .footer {
 	margin: 0 auto;
 	width: 1000px;
-	line-height: 30px;
+	line-height: 28px;
 	vertical-align: middle;
 	text-align: center;
 }
@@ -58,7 +58,7 @@ ul {
 }
 .logo {
 	float: left;
-	margin-left: 30px;
+	margin-left: 25px;
 	margin-top: 10px;
 	width: 293px;
 	height: 165px;
@@ -118,7 +118,6 @@ ul {
 }
 .menu {
 	width: 1000px;	
-	line-height: 30px;
 	border-top: 1px solid #cacbcb;
 	border-bottom: 1px solid #000000;
 	text-align: center;
@@ -132,10 +131,12 @@ ul {
 	display: inline-block;
 	position: relative;
 }
-.menu li a {
+.menu li .nav-link {
 	margin-left: 30px;
 	margin-right: 30px;
-	padding-top: 7px;
+	padding-top: 5px;
+	height: 25px;
+	line-height: 25px;
 	display: block;
 	text-decoration: none;
 	font: normal 14px Tahoma;
@@ -145,7 +146,7 @@ ul {
 	margin-left: 0;
 	margin-right: 0;
 	padding-top: 0;
-	height: auto;
+	height: 24px;
 }
 .triangle {
 	display: inline-block;
@@ -161,9 +162,8 @@ ul {
 	display: none;
 	position: absolute;
 	left: 0;
-	top: 30px;
-	padding-bottom: 10px; 
-	width: 140px;
+	top: 30px; 
+	width: 150px;
 	background-color: #303030;
 	-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow:    0px 5px 5px 0px rgba(0, 0, 0, 0.75);
@@ -201,10 +201,10 @@ ul {
 	float: left;
 }
 .info, .news {
-	margin-top: 10px;
+	margin-top: 6px;
 	margin-right: 20px;
 	margin-left: 15px;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 }
 .content h3 {
 	text-align: center;
@@ -212,6 +212,7 @@ ul {
 	color: #424c43;
 }
 .content p {
+	padding-top: 5px;
 	font: normal 14px/24px Tahoma;
 	color: #424c43;
 }

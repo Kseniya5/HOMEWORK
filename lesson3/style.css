@@ -7,8 +7,8 @@
 }
 .wrapper {
     margin: 0 auto;
-    width: 965px;
-    padding: 50px 50px 60px 50px;
+    width: 967px;
+    padding: 50px 48px 60px 45px;
     box-shadow: 4px 0px 5px 0px rgba(219, 219, 219, 0.75), -4px 0px 5px 0px rgba(219, 219, 219, 0.75);
     background-color: #ffffff;
 }
@@ -20,7 +20,7 @@
 }
 .menu {
     margin-bottom: 40px;
-    width: 965px;
+    width: 967px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5e5e5e+0,444343+100 */
     background: #5e5e5e;
     /* Old browsers */    
@@ -32,6 +32,9 @@
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', endColorstr='#444343', GradientType=0);
     /* IE6-9 */
+}
+.menu ul {
+    width: 967px;
 }
 .menu li {
     display: inline-block;
@@ -80,10 +83,10 @@ a {
     border-bottom: 1px solid #c8c8c8;	
 }
 .sidebar a {
-    padding-left: 25px;
+    padding-left: 22px;
     display: block;
     vertical-align: middle;
-    font: normal 13.33px/39px OpenSans;
+    font: normal 15px/39px OpenSans;
     color: #656363;
 }
 .sidebar li:hover {
@@ -111,14 +114,14 @@ a {
     clear: both;
 }
 .content {
-    width: 670px;
-    margin: 0 0 60px 44px;
+    width: 678px;
+    margin: 0 0 60px 49px;
 }
 .content img {
     display: block;
 }
 .content p {
-    padding-top: 30px;
+    padding-top: 35px;
     padding-left: 25px;
     padding-right: 25px;
     font: normal 13.33px/21.33px OpenSans;

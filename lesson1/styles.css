@@ -3,22 +3,23 @@
 	padding: 0;
 }
 
-.wrapper-main {
+body {
 	background-color: #eeeeee;
 	padding-top: 5px;
-	padding-bottom: 50px;
 }
 .wrapper {
 	margin: 0 auto 0;
-	padding-bottom: 50px;
-	width: 515px;
+	padding-bottom: 40px;
+	padding-right: 65px;
+	padding-left: 65px;
+	width: 385px;
 	border: 1px solid #cecece;
 	background-color: #ffffff;
 }
 .title {
 	margin: 50px auto 20px;
 	text-align: center;
-	font-size: 25px;
+	font-size: 22px;
 }
 .photo {
     max-width: 100%;
@@ -29,34 +30,41 @@
 }
 .main-content {
 	margin-top: 10px;
-	margin-right: 65px;
-	margin-left: 65px;
 	margin-bottom: 20px;
 	line-height: 20px;
+	font-size: 17.5px;
 	font-weight: normal;
 }
 hr {
-	width: 415px;
-	margin: 0 auto 20px;
+	width: 410px;
+	margin-left: -10px;
+	margin-bottom: 23px;
 
 }
-ul {
-	margin-right: 65px;
-}
 .arguments {
-	margin-left: 85px;
-	margin-top: 30px;
+	margin-left: 25px;
+	margin-top: 31px;
 	margin-bottom: 20px;
 }
 .argument {
-	margin-top: 10px;
+	margin-top: 5px;
+	font-size: 17.5px;
+}
+.phone {
+	margin-bottom: 7px;
 }
 p, a {
-	margin-left: 65px;
-	margin-right: 65px;
 	margin-top: 0;
+	margin-bottom: 29px;
+	font-size: 17.5px;
 }
 a {
 	margin-bottom: 20px;
 	display: block;
+}
+.profil {
+	margin-bottom: 5px;
+}
+.fidback {
+	margin-bottom: 5px;
 }
