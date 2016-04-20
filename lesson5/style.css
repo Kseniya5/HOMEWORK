@@ -153,6 +153,9 @@ ul {
 	background: rgba( 0,0,0,0.63) 100% 100%;
 	background-size: contain;
 }
+.form {
+	margin: 0 142px;
+}
 .facebookbutton {
 	margin: auto;
 	padding-bottom: 33px;
@@ -162,8 +165,6 @@ ul {
 	background: url(img/facebook.png) no-repeat;
 }
 form .or {
-	margin-left: 145px;
-	margin-right: 145px;
 	margin-bottom: 29px;
 	overflow: hidden;
 	text-align: center;
@@ -257,7 +258,7 @@ input[type=checkbox]:checked + label:before {
     line-height: 13px;
 }
 .checkbox {
-	margin-left: -35px;
+	margin-left: -27px;
 	padding-top: 4px;
 }
 input[type=submit] {
@@ -268,6 +269,7 @@ input[type=submit] {
 	height: 35px;
 	border-radius: 3px;
 	border: 1px solid #65a8e4;
+	cursor: pointer;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,50aedb+0,207cca+100,7db9e8+100,2e7ac4+100 */
 	background: rgb(30,87,153); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(80,174,219,1) 0%, rgba(32,124,202,1) 100%, rgba(125,185,232,1) 100%, rgba(46,122,196,1) 100%); /* FF3.6-15 */

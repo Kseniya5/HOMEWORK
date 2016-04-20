@@ -26,7 +26,8 @@ li {
 	width: 910px;
 	padding: 15px 45px 0;
 }
-.phone div {
+.phone:before {
+	content: "";
 	margin-left: 5px;
 	margin-right: 5px;
 	width: 22px;
@@ -40,11 +41,6 @@ li {
 	background: -o-linear-gradient(#1e5799 0%, #0c3256 0%, #114165 59%, #206988 100%);
 	background: linear-gradient(#1e5799 0%, #0c3256 0%, #114165 59%, #206988 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#206988',GradientType=0 ); /* IE6-9 */
-}
-.phone span {
-	width: 22px;
-	height: 21px;
-	display: inline-block;
 	background: url(img/phone.png) no-repeat;
 }
 .phone {
@@ -74,12 +70,14 @@ li {
 	border-bottom: 1px solid #596d80; 
 	border-left: 1px solid #dce7ec; 
 }
-.pctr-man {
+.autonotification input:first-child:before {
+	content: "";
 	margin-right: 3px;
-	width: 14px;
-	height: 18px;
+	float: left;
 	background: url(img/man.png) no-repeat;
 	display: inline-block;
+	width: 14px;
+	height: 18px;
 	vertical-align: middle;
 }
 .autonotification input {
@@ -166,13 +164,12 @@ li {
 	margin-top: 10px;
 	width: 910px;
 	height: 237px;
-	background-image: url(img/banner.png);
 }
 nav {
-	margin-top: 8px;
+	margin-top: 3px;
 	width: 908px;
-	padding-top: 3px;
-	padding-bottom: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-radius: 4px;
 	border-top: solid 1px #2c345a;
 	border-right: solid 1px #0d1642;
@@ -202,7 +199,7 @@ nav ul a {
 	color: #b1bcc0;
 }
 nav ul li:hover a {
-	border-radius: 10px;
+	border-radius: 12px;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2989d8+50,114165+100,0c3256+100 */
 	background: #2989d8; /* Old browsers */
 	background: -moz-linear-gradient(top,  #2989d8 50%, #114165 100%, #0c3256 100%); /* FF3.6-15 */
@@ -282,8 +279,8 @@ h3 {
 }
 h5 {
 	margin-left: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	display: block;
 	width: 150px;
 	border: 1px solid #79878d;
@@ -312,10 +309,10 @@ h5 {
 }
 .left-bar ul li {
 	margin-left: 35px;
-	margin-bottom: 6px;
+	margin-bottom: 7px;
 }
 .left-bar ul li:last-child {
-	margin-bottom: 3px;
+	margin-bottom: 2px;
 }
 .left-bar ul li a {
 	display: block;
@@ -344,8 +341,8 @@ ul li a:hover .marker {
 }
 .content {
 	margin-top: 15px;
-	padding: 16px 0px 0px 20px;
-	width: 505px; 
+	padding: 16px 0px 5px 22px;
+	width: 503px; 
 	border-radius: 3px 2px 2px 3px;
 	background: rgba(201,207,209,1);
 	background: -moz-linear-gradient(top, rgba(201,207,209,1) 0%, rgba(35,75,93,0.49) 100%);
@@ -361,7 +358,7 @@ ul li a:hover .marker {
 }
 .content figure {
 	float: left;
-	margin-right: 30px;
+	margin-right: 29px;
 	margin-bottom: 25px;
 }
 .box-for-image {
@@ -383,7 +380,7 @@ ul li a:hover .marker {
 	width: 137px;
 	text-align: center;
 	display: inline-block;
-	font: normal 14px/14px "Lucida Sans Unicode";
+	font: normal 13px/12px "Lucida Sans Unicode";
 	color: #1f2528;
 }
 figcaption .blue-name {
@@ -401,10 +398,19 @@ figcaption .blue-name {
 }
 .right-bar {
 	margin-left: 9px;
+	margin-top: -3px;
+}
+.right-bar .catalog {
+	margin-right: 7px;
+}
+.right-bar h5:first-child {
+	margin-top: 15px;
 }
 .right-bar h5 {
 	margin-left: 15px;
-	margin-top: 18px;
+	margin-top: 22px;
+	margin-bottom: 7px;
+	width: 135px;
 }
 .right-bar input, .right-bar label {
 	margin-left: 25px;
@@ -414,10 +420,6 @@ figcaption .blue-name {
 }
 .right-bar button {
 	margin-left: 23px;
-}
-.right-bar h5 {
-	margin-bottom: 5px;
-	width: 135px;
 }
 .right-bar input + .right-bar h5 {
 	margin-top: 14px;
@@ -453,7 +455,7 @@ input[type=checkbox]:checked + label:before {
 	margin-bottom: -7px;
 }
 .right-bar button {
-	margin-top: 15px;
+	margin-top: 12px;
 	border-radius: 9px;
 	width: 80px;
 	height: 25px;
@@ -475,14 +477,14 @@ input[type=checkbox]:checked + label:before {
 	color: #e5e9ea;
 }
 .menu-labels ul {
-	margin-top: 40px;
-	margin-bottom: 23px;
+	margin-top: 36px;
+	margin-bottom: 25px;
 	text-align: center;
 }
 .menu-labels ul li {
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 7px;
+	margin-right: 9px;
 }
 .menu-labels ul li:last-child {
 	margin-right: 0;
@@ -542,13 +544,16 @@ footer {
 }
 footer ul {
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 8px;
 }
 footer ul li {
 	display: inline-block;
 	padding: 0 12px;
 	border-right: 1px solid #bec6c9;
 	
+}
+footer ul li:last-child {
+	border-right: none;
 }
 footer ul li a {
 	display: block;
