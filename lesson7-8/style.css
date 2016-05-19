@@ -57,26 +57,30 @@ li {
 .footer .clear {
 	display: none;
 }
-.wrapper-header-slider {
+.wrapper-header {
 	background: url(img/mountains.png) 0 0 no-repeat;
 	background-size: cover;
 }	    
-.header, .slider {
+.header, .slider-content-photo, .slider-nav {
 	margin: 0 auto;
 	max-width: 960px;
 }
 .header {
-	padding-bottom: 170px;
+	margin-bottom: 170px;
 	padding-top: 70px;
 }
 .header-logo {
 	width: 151px;
 	height: 39px;
+	display: block;
 	float: left;
 	background: url(img/logo.png) no-repeat;
 }
 .nav {
 	float: right;
+}
+.header .nav {
+	margin-top: -2px;
 }
 body {
 	font-size: 16px;
@@ -104,38 +108,37 @@ body {
 }
 .wrapper-slider {
 	background-color: rgba(0,0,0,0.2);
-}
-.slider-photo {
-	display: block;
-	position: absolute;
-	top: -17px;
-	right: 7.81%;
-	width: 261px;
-	height: 373px;
-	background: url(img/Iphone.png) no-repeat;
-}
-.slider {
-	padding-top: 80px;
-	padding-bottom: 80px;
-	display: block;
 	position: relative;
 }
-.slider-content {
-	width: 52.08%;
+.slider-photo {
+	float: right;
+	display: block;
+	margin-top: -17px;
+	margin-right: 7.81%;
+	width: 261px;
+	height: 373px;
 }
-.slider-content h2 {
+.slider-content {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	width: 52.08%;
+	float: left;
+}
+.slider-content-title {
 	font: normal 60px/55px 'league_gothicregular';
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-	letter-spacing: -0.7px;
+	letter-spacing: -0.6px;
 	color: #fefefe;
 }
-.slider-content h3 {
+.slider-content-subtitle {
 	font: normal 32px 'league_gothicregular';
+	letter-spacing: -0.05px;
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 	color: #edbfff;
 }
 .slider-content p {
 	font: normal 18px/24px 'open_sanslight';
+	letter-spacing: -0.1px;
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 	color: #ffffff;
 }
@@ -149,7 +152,7 @@ body {
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	left: -33.5%;
+	left: 3%;
 }
 .scrollbar-right {
 	background: url(img/scrollbar-right.png) no-repeat;
@@ -160,34 +163,27 @@ body {
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	right: -33.5%;
+	right: 3%;
 }
-@media (max-width: 1440px) {
-	.scrollbar-right, .scrollbar-left {
-		display: none;
-	}
-}
-.nav-link {
-	margin: 0 auto;
-	padding-top: 95px;
+.slider-nav {
+	margin-top: 95px;
 	padding-bottom: 55px;
-	max-width: 960px;
 }
-.nav-link ul {
+.slider-nav ul {
 	padding-right: 17.1%;
 	float: right;	
 }
-.nav-link li {
+.slider-nav li {
 	padding-left: 2px;
 	display: inline-block;
 }
-.round-link {
+.nav-pagination-item {
 	display: block;
 	background: url(img/nav-link.png);
 	width: 17px;
 	height: 17px;
 }
-.round-link:hover {
+.nav-pagination-item:active {
 	background: url(img/nav-link-hover.png);
 }
 .wrapper-about-company {
@@ -204,21 +200,20 @@ body {
 }
 .about-company {
 	margin: 0 auto;
-	padding-top: 74px;
-	padding-bottom: 105px;
+	margin-top: 74px;
+	margin-bottom: 65px;
 	padding-left: 1%;
 	max-width: 947.41px;
 }
 .about-company li {
-	margin-right: 5.75%;
-	width: 29.5%;
+	margin-right: 6.8%;
+	width: 28.8%;
 	float: left;
-	position: relative;
 }
 .about-company li:last-child {
 	margin-right: 0;
 }
-.about-company h4 {
+.about-company-title {
 	padding-bottom: 5px;
 	font: normal 30px 'league_gothicregular';
 	color: #ffffff;
@@ -226,6 +221,7 @@ body {
 }
 .about-company p {
 	font: normal 16px/24px 'open_sanslight';
+	letter-spacing: -0.1px;
 	color: #ffffff;
 	text-shadow: 0px 1px 1px rgba(15, 21, 24, 1);
 }
@@ -251,26 +247,23 @@ body {
 	background-position: -56px 0;
 }
 .about-company-content {
-	height: 160px;
-	overflow: hidden;
+	margin-left: 18%;
 }
 .more {
-	position: absolute;
-	right: 0;
-	bottom: -39px;
-}
-.more a {
+	margin-top: 17px;
+	margin-right: 1%;
+	float: right;
 	font: normal 18px 'league_gothicregular';
 	color: #ffffff; 
 	text-shadow: 0px 1px 1px rgba(15, 21, 24, 1);
 }
-.more a:hover {
+.more:hover {
 	text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
 }
-.wrapper-pingbuller-start-update {
+.wrapper-comment {
 	background-color: #f9f9f9;
 }	
-.pingbuller-start-update {
+.comment {
 	margin: 0 auto;
 	padding-top: 100px;
 	padding-bottom: 70px;
@@ -278,17 +271,17 @@ body {
 	padding-right: 0.5%;
 	max-width: 930.9px;
 }
-.pingbuller-start, .update {
+.comment-author, .comment-text {
 	float: left;
 }
-.pingbuller-start {
+.comment-author {
 	width: 46%;
 }
-.update {
+.comment-text {
 	margin-left: 6.5%;
 	width: 47.5%;
 }
-.pingbuller-start-content {
+.comment-author-content {
 	margin: 0 auto;
 	padding-top: 30px;
 	padding-bottom: 35px;
@@ -306,13 +299,13 @@ h4 {
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
 	text-transform: uppercase;
 }
-.color-viola {
+.title-color-accent {
 	color: #edbfff;
 }
 .content-text {
-	padding-top: 10px;
+	padding-top: 8px;
 	font: normal 16px/24px 'open_sanslight';
-	letter-spacing: -0.1px;
+	letter-spacing: -0.5px;
 	word-wrap: break-word; 
 	color: #454545;
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 1); 
@@ -323,7 +316,6 @@ h4 {
 	left: -24px;
 	width: 49px;
 	height: 50px;
-	background: url(img/cofinder.png) no-repeat;
 }
 .triangle {
 	position: absolute;
@@ -333,15 +325,15 @@ h4 {
 	height: 21px;
 	background: url(img/triangle.png) no-repeat;
 }
-.nav-link-light a {
+.nav-light a {
 	background: url(img/nav-link-light.png);
 	width: 19px;
 	height: 20px;
 }
-.nav-link-light a:hover {
+.nav-light a:active {
 	background: url(img/nav-link-light-hover.png) no-repeat;
 }
-.nav-link-light {
+.nav-light {
 	padding-top: 22px;
 	padding-right: 0;
 	padding-left: 0;
@@ -349,72 +341,64 @@ h4 {
 	margin: 0 auto;
 	text-align: center;
 }
-.nav-link-light ul {
+.nav-light ul {
 	float: none;
 	padding: 0;
 }
-.nav-link-light li {
+.nav-light li {
 	padding-left: 0.69%;
 	padding-bottom: 0;
 }
-.nav-link-light li:first-child {
+.nav-light li:first-child {
 	padding-left: 0;
 }
-.update {
-	position: relative;
+.comment-text .comment-title {
+	margin-top: 30px;
+	margin-left: -0.5%;
 }
-.update h4 {
-	padding-top: 30px;
+.comment-text ul {
+	margin-top: 16px;
 }
-.update ul {
-	padding-top: 16px;
-}
-.update ul .wrapper-marker {
+.comment-text ul .wrapper-marker {
 	width: 12%;
 	display: block;
 	float: left;
 }
-.update h5 {
+.comment-text h5 {
 	font: normal 16px 'open_sansextrabold';
 	color: #454545;
 }
-.update p {
+.comment-text p {
 	font: normal 16px/26px 'open_sanslight';
 	color: #454545;
-	letter-spacing: -0.2px;
+	letter-spacing: -0.1px;
 }
-.update li {
-	padding-bottom: 16px;
+.comment-text li {
+	margin-bottom: 16px;
 }
 .recent-news, .category, .blog-updates {
 	float: left;
-	padding-left: 3%;
+	margin-left: 2.7%;
 	width: 83.78%;
 }
 .first-marker {
 	display: block;
 	width: 49px;
 	height: 49px;
-	background: url(img/first-marker.png);
-	background-size: cover;
 }
 .second-marker {
 	display: block;
 	width: 49px;
 	height: 49px;
-	background: url(img/second-marker.png);
 }
 .third-marker {
 	display: block;
 	width: 49px;
 	height: 49px;
-	background: url(img/third-marker.png);
 }
 .update-more {
-	right: 3.5%;
-	bottom: -27px;
-}
-.update-more a {
+	margin-right: 3.5%;
+	margin-top: 5px;
 	color: #454545;
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
 }
@@ -429,49 +413,50 @@ h4 {
 	padding-right: 7.545%;
 	padding-left: 7.545%;
 	max-width: 780px;
+	line-height: 120px;
+	vertical-align: middle;
 }
 .logo-links ul {
 	margin-top: -5px;
 }
 .logo-links ul li {
-	float: left;
+	display: inline-block;
 	line-height: 120px;
-	margin-right: 8.7%;
+	margin-right: 8.2%;
 }
 .logo-links ul li:last-child {
 	margin-right: 0;
 }
 .logo-links a {
+	display: block;
+	vertical-align: middle;
+}
+.logo-links img {
 	display: inline-block;
+	line-height: 120px;
 	vertical-align: middle;
 }
 .logo-bllabong {
-	background: url(img/bllabong.png);
 	width: 70px;
 	height: 63px;
 }
 .logo-dg {
-	background: url(img/dg.png);
 	width: 72px;
 	height: 66px;
 }
 .logo-tree {
-	background: url(img/tree.png);
 	width: 65px;
 	height: 65px;
 }
 .logo-awsm {
-	background: url(img/awsm.png);
 	width: 50px;
 	height: 63px;
 }
 .logo-rvca {
-	background: url(img/rvca.png);
 	width: 103px;
 	height: 21px;
 }
 .logo-vonzipper {
-	background: url(img/vonzipper.png);
 	width: 79px;
 	height: 61px;
 }
@@ -480,7 +465,7 @@ h4 {
 }
 .comments-news {
 	margin: 0 auto;
-	padding-top: 95px;
+	padding-top: 97px;
 	padding-bottom: 95px;
 	max-width: 960px;
 	-webkit-box-shadow: 0 15px 15px -15px #000;
@@ -490,14 +475,13 @@ h4 {
 .company-info, .comments, .news {
 	float: left;
 	width: 29.16666%;
-	height: 205px;
-	overflow: hidden;
 }
 .company-info, .comments {
-	margin-right: 6.25%;
+	margin-right: 6.1%;
 }
 .company-info h1 {
 	font: normal 48px/45px "league_gothicregular";
+	letter-spacing: -0.5px;
 	color: #454545;
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
 }
@@ -505,10 +489,13 @@ h4 {
 	color: #b9b9b9;
 }
 .copyright {
-	padding-top: 15px;
+	padding-top: 14px;
 	font: italic 16px Georgia;
 	color: #c5c5c5;
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+}
+.comments-news .content-text {
+	letter-spacing: -0.1px;
 }
 .wrapper-footer {
 	height: 114px;
@@ -539,37 +526,39 @@ h4 {
 	font-family: "open_sansextrabold";
 	line-height: 109px;
 }
-
+@media (max-width: 1125px) and (min-width: 768px){
+	.scrollbar-left, .scrollbar-right {
+		display: none;
+	}
+}
 @media (max-width: 959px){
 	body {
 		font-size: 13px; 
 	}
 	.header {
-		padding-bottom: 73px;
+		margin-bottom: 73px;
 		padding-left: 2.6041666%;
 	}
 	.header-logo, .nav {
 		float: none;
 	}
-	.nav {
+	.header .nav {
 		margin-top: 27px;
 		margin-left: -5px;
 	}
 	.nav-item {
 		margin-right: 1.72em;
 	}
-	.slider h2 {
+	.slider-content-title {
 		font-size: 48px;
 		line-height: 57px;
 		letter-spacing: -0.3px;
 	}
-	.slider h3 {
+	.slider-content-subtitle {
 		font-size: 24px;
-		height: 24px;
-		overflow: hidden;
 	}
 	.slider p {
-		padding-top: 11px;
+		padding-top: 5px;
 		font-size: 16px;
 		line-height: 26px;
 		word-wrap: break-word;
@@ -583,36 +572,32 @@ h4 {
 		display: block;
 	}
 	.slider-content {
+		margin: 0;
 		margin-left: 5.6%;
+		margin-top: 95px;
+		margin-bottom: 111px;
 		width: 37.2%;
-		height: 190px;
-		overflow: hidden;
-	}
-	.slider {
-		padding: 0;
-		padding-top: 95px;
-		padding-bottom: 115px;
 	}
 	.slider-photo {
-		top: -23px;
-		right: 4.5%;
+		margin-top: -23px;
+		margin-right: 4.5%;
 	}
-	.nav-link {
-		padding-top: 38px;
+	.slider-nav {
+		margin-top: 38px;
 		padding-bottom: 99px;
 		padding-right: 0;
 	}
-	.nav-link ul {
+	.slider-nav ul {
 		padding-right: 16.9%;
 	}
 	.about-company {
 		padding-left: 4.19%;
-		padding-bottom: 96px;
+		margin-bottom: 65px;
 	}
 	.about-company-content {
-		height: 170px;
+		margin-left: 24%;
 	}
-	.about-company h4 {
+	.about-company-title {
 		padding-bottom: 0;
 		font-size: 24px;
 	}
@@ -621,84 +606,89 @@ h4 {
 		margin-right: 12%;
 	}
 	.more {
-		right: 15px;
-		bottom: -30px;
+		margin-right: 6%;
+		margin-top: 6px;
 	}
-	.pingbuller-start {
+	.comment-author {
 		width: 47%;
 	}
-	.update {
+	.comment-text {
 		margin-left: 7.5%;
 		width: 45.5%;	
 	}
-	.update ul {
-		padding-top: 15px;
+	.comment-text ul {
+		margin-top: 15px;
 	}
-	.update h4 {
+	.comment-text .comment-title {
+		margin-left: 0;
 		font-size: 30px;
 	}
-	.pingbuller-start-content {
-		padding-top: 27px;
-		padding-bottom: 40px;
+	.comment-author-content {
+		padding-top: 28px;
+		padding-bottom: 44px;
 		padding-left: 20%;
 	}
-	.pingbuller-start h4 {
+	.comment-author .comment-title {
 		width: 50%;
 		line-height: 26px;
 	}
 	.pingbuller-cofinder {
 		left: 5px;
 	}
-	h4 {
+	.comment-title {
 		font-size: 24px;
 	}
-	.update h5 {
-		height: 24px;
-		overflow: hidden;
-	}
-	.pingbuller-start-content .content-text {
+	.comment-author-content .content-text {
 		margin-left: -1%;
 		padding-top: 5px;
-		overflow: hidden;
-		height: 150px;
 	}
 	.triangle {
 		display: none;
 	}
-	.nav-link-light {
+	.nav-light {
+		padding-top: 0;
 		padding-right: 0;
-		padding-top: 21px;
+		margin-top: 23px;
 		padding-bottom: 70px;
 		margin-left: 7.5%;
 	}
-	.nav-link-light ul {
+	.nav-light ul {
 		padding-right: 0;
 	}
 	.recent-news, .category, .blog-updates {
-		padding-left: 5.5%;
+		margin-left: 5%;
 		width: 79.5%;
-		height: 51px;
-		overflow: hidden;
 	}
-	.update ul .wrapper-marker {
+	.comment-text li {
+		margin-bottom: 19px;
+	}
+	.comment-text ul .wrapper-marker {
 		width: 14.65%;
 	}
 	.update-more {
-		right: 1.5%;
-		bottom: -22px;
+		margin-right: 2%;
+		margin-top: -3px;
 	}
 	.update-more a {
 		font-size: 20px;
 	}
-	.pingbuller-start-update {
+	.comment {
 		padding-bottom: 0;
 	}
 	.logo-links {
 		padding-left: 2.5%;
 		padding-right: 0;
+		padding-top: 28px;
+		line-height: 0;
+		vertical-align: top;
+	}
+	.logo-links ul {
+		text-align: center;
+		width: 99.2%;
 	}
 	.logo-links ul li {
-		margin-right: 7.9%;
+		margin-right: 7.5%;
+		line-height: 0;
 	}
 	.comments-news {
 		padding-top: 97px;
@@ -735,6 +725,10 @@ h4 {
 	}
 }
 @media (max-width: 767px){
+	.header {
+		padding-top: 70px;
+		padding-left: 0;
+	}
 	.header-logo {
 		float: none;
 		margin: 0 auto;
@@ -743,51 +737,51 @@ h4 {
 		float: none;
 		text-align: center;
 	}
-	.slider {
-		padding-bottom: 95px;
-	}
-	.slider h2 {
+	.slider-content-title {
 		font-size: 36px;
 		line-height: 36px;
 	}
-	.slider h3 {
+	.slider-content-subtitle {
 		font-size: 18px;
-		line-height: 18px;
+		line-height: 22px;
 	}
 	.slider-content {
-		margin-left: 8.3333333%;
-		height: 55px;
-		overflow: hidden;
-		width: 42.708333%;
+		margin-left: 6.5%;
+		margin-bottom: 92px;
+		width: 48%;
 	}
 	.slider-photo {
-		top: -10px;
-		right: 7.2916666%;
-		width: 184px;
-		background-size: contain;
+		margin-top: -10px;
+		margin-bottom: -5px;
+		padding-right: 1%;
+		width: 182px;
+		height: 100%;
 	}
-	.nav-link {
-    	padding-top: 22px;
-    	padding-bottom: 60px;
+	.slider-content p {
+		display: none;
+	}
+	.slider-nav {
+    	margin-top: 22px;
+    	padding-bottom: 58px;
     	padding-right: 0;
 	}
-	.nav-link ul {
+	.slider-nav ul {
 		margin: 0;
 		padding: 0;
 		float: none;
 		text-align: center;
 	}
-	.nav-link li:first-child {
+	.slider-nav li:first-child {
 		padding-left: 0;
 	}
 	.about-company {
 		padding-left: 5.5%;
-		padding-bottom: 40px;
+		margin-bottom: 44px;
 	}
 	.about-company-content {
-		height: 105px;
 		padding-bottom: 0;
-		margin-bottom: 55px;
+		margin-bottom: 24px;
+		margin-left: 11.5%;
 	}
 	.about-company-sprite-news, .about-company-sprite-music, .about-company-sprite-settings {
 		margin-right: 5.5%;
@@ -801,56 +795,58 @@ h4 {
 		line-height: 25px;
 	}
 	.more {
-		right: 7px;
-		bottom: -31px;
+		margin-right: 2%;
+		margin-top: 11px;
 	}
-	.pingbuller-start, .update {
+	.comment-author, .comment-text {
 		float: none;
 	}
-	.pingbuller-start-update {
-		padding-top: 75px;
-		padding-bottom: 68px;
+	.comment {
+		padding-top: 73px;
+		padding-bottom: 47px;
 	}
-	.pingbuller-start {
+	.comment-author {
 		width: 98%;
 	}
-	.pingbuller-start-content {
+	.comment-author-content {
 		padding-top: 25px;
 		padding-left: 15%;
 	}
-	h4 {
+	.comment-title {
 		font-size: 30px;
 	}
-	.pingbuller-start h4 {
+	.comment-author .comment-title {
 		width: 100%;
 	}
-	.pingbuller-start-content .content-text {
+	.comment-author-content .content-text {
+		margin-left: 0;
 		padding-top: 17px;
-		height: 170px;
+		letter-spacing: -0.1px;
 	}
-	.nav-link-light {
-		padding-top: 13px;
-		padding-bottom: 45px;
+	.nav-light {
+		padding-top: 0;
+		margin-top: 11px;
+		padding-bottom: 44px;
 		padding-right: 3.5%;
 	}
-	.update {
+	.comment-text {
 		margin-left: 14.5%;
 		width: 85.5%;
 		padding-bottom: 40px;
 	}
-	.update ul .wrapper-marker {
+	.comment-text ul .wrapper-marker {
 		width: 12.66%;
 	}
-	.update h4 {
-		padding-top: 0;
+	.comment-text .comment-title {
+		margin-top: 0;
 	}
 	.recent-news, .category, .blog-updates {
-		padding-left: 4.5%;
+		padding-left: 0;
 		width: 69%;
 	}
 	.update-more {
-		right: 50px;
-		bottom: 18px;
+		margin-right: 12%;
+		margin-top: -3px;
 	}
 	.pingbuller-cofinder {
 		left: 2px;
@@ -861,6 +857,8 @@ h4 {
 	}
 	.logo-links {
 		padding-left: 0;
+		padding-top: 0;
+		line-height: 66px;
 	}
 	.logo-links ul {
 		margin: 0 auto;
@@ -871,23 +869,21 @@ h4 {
 	}
 	.logo-links ul li {
 		margin-right: 15%;
+		margin-top: 0;
 		padding-bottom: 25px;
 		line-height: 66px;
-		float: none;
-		display: inline-block;
 	}
 	.logo-links ul li:nth-child(3n) {
 		margin-right: 0;
 	}
 	.comments-news {
 		padding-top: 80px;
-		padding-bottom: 90px;
+		padding-bottom: 86px;
 	}
 	.company-info, .comments, .news {
-		margin-bottom: 61px;
+		margin-bottom: 57px;
 		float: none;
 		width: 100%;
-		height: 125px;
 	}
 	.comments-news h1, .comments-news h4 {
 		font-size: 26px;
@@ -931,7 +927,7 @@ h4 {
 	.header {
 		margin-bottom: 95px;
 		position: relative;
-		padding: 0;
+		padding-bottom: 0;
 	}
 	.header .nav {
 		position: absolute;
@@ -941,7 +937,7 @@ h4 {
 		margin: auto;
 		padding: 0;
 		z-index: 3;
-		top: 60px;
+		top: 130px;
 		width: 245px;
 		border: 1px solid rgba(5,17,22,1);
 		border-radius: 7px;
@@ -983,13 +979,13 @@ h4 {
 }
 @media (max-width: 479px) {
 	.header {
-		padding-top: 0;
-		padding-bottom: 126px;
+		padding-top: 70px;
+		margin-bottom: 126px;
 	}
-	.nav {
+	.header .nav {
+		margin: 0;
 		padding: 0;
 		margin: 35px auto 0;
-		
 	}
 	.nav li {
 		display: none;
@@ -1018,78 +1014,102 @@ h4 {
 	.slider {
 		padding-bottom: 0;
 		padding-top: 0;
-
 	}
 	.slider-content {
-		width: 69%;
-		margin-left: 20%;
+		margin-top: 0;
+		margin-bottom: 0;
+		width: 70%;
+		margin-left: 19%;
 		margin-right: 11%;
 	}
-	.nav-link {
-		padding-top: 78px;
+	.slider-nav {
+		margin-top: 77px;
 		padding-bottom: 66px;		
 		padding-right: 0;
 	}
-	.nav-link ul {
+	.slider-nav ul {
 		float: none;
 		text-align: center;
 	}
 	.about-company {
-		padding-left: 8.5%;
-		padding-top: 68px;
-		padding-bottom: 33px;
+		padding-left: 7.5%;
+		margin-top: 68px;
+		margin-bottom: 62px;
 	}
 	.about-company-sprite-news, .about-company-sprite-music, .about-company-sprite-settings {
 		margin-right: 9.5%;
 	}
 	.about-company-content {
-		margin-bottom: 60px;
+		margin-left: 19%;
+		margin-bottom: 0;
 	}
-	.pingbuller-start-content {
-		padding-top: 20px;
+	.about-company li {
+		margin-bottom: 31px;
+	}
+	.about-company li:last-child {
+		margin-bottom: 0;
+	}
+	.more {
+		margin-right: 6%;
+		margin-top: 10px;
+	}
+	.comment {
+		padding-bottom: 46px;
+	}
+	.comment-author-content {
+		padding-top: 22px;
+		padding-bottom: 23px;
 		padding-left: 24.5%;
 		padding-right: 14%;
 	}
-	.pingbuller-start-content h4 {
-		margin-left: -2%;
+	.comment-author-content .comment-title {
+		margin-left: -1%;
 		width: 50%;
 		font-size: 24px; 
+		line-height: 24px;
 	}
 	.pingbuller-cofinder {
-		left: 10px;
+		left: 7px;
 	}
-	.pingbuller-start-content .content-text {
-		padding-top: 1px;
+	.comment-author-content .content-text {
+		padding-top: 5px;
+		margin-left: -1%;
+		letter-spacing: 0.05px;
 	}
-	.nav-link-light {
-		padding-top: 10px;
-		padding-bottom: 43px;
+	.comment-author-content .comment-title {
+		margin-left: -3%;
+	}
+	.nav-light {
+		margin-top: 0;
+		margin-top: 26px;
+		padding-bottom: 44px;
 		margin-left: 0;
 	}
-	.update {
+	.comment-text {
 		margin-left: 2.5%;
 		width: 97.5%;
 	}
-	.update ul .wrapper-marker {
+	.comment-text ul .wrapper-marker {
 		width: 16.96%;
 	}
 	.recent-news, .category, .blog-updates {
-		padding-left: 6%;
-		width: 74%;
+		padding-left: 0;
+		margin-left: 6%;
+		width: 74.7%;
 	}
-	.update h5 {
-		height: 24px;
-		overflow: hidden;
+	.comment-text .comment-title {
+		margin-left: -0.5%;
 	}
 	.update-more {
-		right: 10px;
-		bottom: 20px;
-	}
-	.update-more a {
+		margin-right: 4%;
+		margin-top: -2px;
 		font-size: 18px;
 	}
-	.update li {
-		padding-bottom: 17px;
+	.comment-text ul {
+		margin-top: 17px;
+	}
+	.comment-text li {
+		margin-bottom: 18px;
 	}
 	.wrapper-comments-news {
 		display: none;
@@ -1101,18 +1121,18 @@ h4 {
 		display: none;
 	}
 	.wrapper-logo-links {
-		height: 418px;
+		height: 421px;
 	}
 	.logo-links {
 		height: 371px;
 	}
 	.logo-links ul {
-		margin-top: 47px;
-		width: 80%;
+		margin-top: 50px;
+		width: 79%;
 	}
 	.logo-links ul li {
-		padding-bottom: 49px;
-		margin-right: 22.916667%;
+		padding-bottom: 50px;
+		margin-right: 22.7%;
 	}
 	.logo-links ul li:nth-child(3) {
 		margin-right: 22.9166667%;
@@ -1122,6 +1142,7 @@ h4 {
 	}
 	.designed {
 		padding-top: 39px;
+		letter-spacing: -0.1px;
 	}
 }
 

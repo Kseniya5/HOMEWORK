@@ -26,8 +26,7 @@ li {
 	width: 910px;
 	padding: 15px 45px 0;
 }
-.phone:before {
-	content: "";
+.phone-icon {
 	margin-left: 5px;
 	margin-right: 5px;
 	width: 22px;
@@ -41,7 +40,15 @@ li {
 	background: -o-linear-gradient(#1e5799 0%, #0c3256 0%, #114165 59%, #206988 100%);
 	background: linear-gradient(#1e5799 0%, #0c3256 0%, #114165 59%, #206988 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#206988',GradientType=0 ); /* IE6-9 */
-	background: url(img/phone.png) no-repeat;
+}
+
+.phone-icon:before {
+	content: "";
+	width: 22px;
+	height: 21px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(img/phone.png) 1px -2px no-repeat;
 }
 .phone {
 	margin-right: 15px;
@@ -70,14 +77,15 @@ li {
 	border-bottom: 1px solid #596d80; 
 	border-left: 1px solid #dce7ec; 
 }
-.autonotification input:first-child:before {
+.man-icon {
+	margin-right: 3px;	
+}
+.man-icon:before {
 	content: "";
-	margin-right: 3px;
-	float: left;
-	background: url(img/man.png) no-repeat;
+	background: url(img/man.png) -1px 2px no-repeat;
 	display: inline-block;
 	width: 14px;
-	height: 18px;
+	height: 20px;
 	vertical-align: middle;
 }
 .autonotification input {
@@ -168,9 +176,9 @@ li {
 nav {
 	margin-top: 3px;
 	width: 908px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-radius: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-radius: 5px;
 	border-top: solid 1px #2c345a;
 	border-right: solid 1px #0d1642;
 	border-bottom: solid 1px #0a1030;
@@ -207,9 +215,9 @@ nav ul li:hover a {
 	background: linear-gradient(to bottom,  #2989d8 50%,#114165 100%,#0c3256 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2989d8', endColorstr='#0c3256',GradientType=0 ); /* IE6-9 */
 }
-nav .basket {
+.basket {
 	float: right;
-	margin-right: 15px;
+	margin-right: 14px;
 	font: normal 11px Arial;
 	color: #929b9f;
 }
@@ -217,21 +225,22 @@ nav .basket {
 	font-size: 12px;
 	color: #0d5a8f;
 }
-nav .basket :nth-child(3) {
-	margin-left: 2px;
-	margin-right: 10px;
+.basket span:nth-child(2) {
+	margin-right: 15px;
+	margin-left: 5px;
 }
 .blue-color:last-child {
-	margin-left: 10px;
+	margin-left: 13px;
 }
-.img-basket {
-	margin-right: 5px;
+.basket-icon:before {
+	content: "";
+	margin-right: 8px;
 	width: 21px;
 	height: 17px;
 	display: inline-block;
-	background-image: url(img/basket.png);
+	background: url(img/basket.png) no-repeat;
 }
-.basket p, .basket span {
+.basket span {
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -271,11 +280,15 @@ h3 {
 	background: linear-gradient(to bottom,  #206988 0%,#114165 59%,#207cca 100%,#0c3256 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206988', endColorstr='#0c3256',GradientType=0 ); /* IE6-9 */
 }
-.catalog img {
+.catalog:before {
+	content: "";
 	margin: 0 4px;
 	padding-bottom: 2px;
 	vertical-align: middle;
-	display: block-inline;
+	display: inline-block;
+	background: url(img/catalog-image.png) no-repeat;
+	width: 12px;
+	height: 16px;
 }
 h5 {
 	margin-left: 2px;
@@ -297,7 +310,8 @@ h5 {
 	vertical-align: middle;
 	background: url(img/circle.png) no-repeat;
 }
-.marker {
+.marker:before {
+	content: "";
 	margin-right: 5px;
 	width: 8px;
 	height: 8px;
@@ -332,7 +346,7 @@ h5 {
 	color: #0c3256;
 	border-bottom: solid 2px #58697f;
 }
-ul li a:hover .marker {
+ul li a:hover .marker:before {
 	background: url(img/marker-hover.png) no-repeat;
 	border-bottom: none;
 }
@@ -379,11 +393,14 @@ ul li a:hover .marker {
 .content figcaption {
 	width: 137px;
 	text-align: center;
-	display: inline-block;
+	display: block;
 	font: normal 13px/12px "Lucida Sans Unicode";
 	color: #1f2528;
 }
-figcaption .blue-name {
+.content-link {
+	width: 137px;
+	text-align: center;
+	display: block;
 	font: normal 16px/14px "Lucida Sans Unicode";
 	color: #206988;
 }
@@ -476,20 +493,20 @@ input[type=checkbox]:checked + label:before {
 	vertical-align: middle;
 	color: #e5e9ea;
 }
-.menu-labels ul {
+.logo ul {
 	margin-top: 36px;
-	margin-bottom: 25px;
+	margin-bottom: 27px;
 	text-align: center;
 }
-.menu-labels ul li {
+.logo ul li {
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 9px;
 }
-.menu-labels ul li:last-child {
+.logo ul li:last-child {
 	margin-right: 0;
 }
-.menu-labels a {
+.logo a {
 	display: block;
 }
 .toyo-tires {
@@ -532,7 +549,7 @@ input[type=checkbox]:checked + label:before {
 	height: 11px;
 	background: url(img/dunlop.png) no-repeat;
 }
-footer {
+.footer {
 	padding-bottom: 50px;
 	border-top: 1px solid #242c3e;
 	border-right: 1px solid #242a3c;
@@ -542,29 +559,31 @@ footer {
 	box-shadow: 1px 0px 1px 0px rgba(126,130,140,1);
 	background-color: #213a4d; 
 }
-footer ul {
+.footer ul {
 	text-align: center;
 	padding-top: 8px;
 }
-footer ul li {
+.footer ul li {
 	display: inline-block;
 	padding: 0 12px;
 	border-right: 1px solid #bec6c9;
 	
 }
-footer ul li:last-child {
+.footer ul li:last-child {
 	border-right: none;
 }
-footer ul li a {
+.footer ul li a {
 	display: block;
 	font: normal 13px/13px Arial;
 	color: #bec6c9;
 }
-footer ul li a:hover {
+.footer ul li a:hover {
 	color: #52abcb;
 }
-footer p {
+.footer .developer-link {
+	margin: auto;
 	margin-top: 15px;
+	display: block;
 	text-align: center;
 	font: normal 10px Arial;
 	color: #7f4740;
