@@ -3,168 +3,179 @@
     <head>
         <title>Pingbuller</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
     </head>
     <body>
-    	<div class="wrapper-header">
-    		<header class="header clearfix">
-    			<a href="#" class="header-logo"></a>
-    			<nav class="nav">
-    				<ul>
-    					<li class="nav-item"><a href="#" alt=""><span>Home</span></a></li><li class="nav-item"><a href="#" alt=""><span>About</span></a></li><li class="nav-item"><a href="#" alt=""><span>Blog</span></a></li><li class="nav-item"><a href="#" alt=""><span>Products</span></a></li><li class="nav-item"><a href="#" alt=""><span>Lorem Ipsum</span></a></li><li class="nav-item"><a href="#" alt=""><span>Dolor Sit Amet</span></a></li>
-    				</ul>
-    			</nav>
-    		</header>
-    		<section class="slider">
-				<div class="wrapper-slider">
-					<span class="scrollbar-left"></span>
-					<div class="slider-content-photo">
-						<div class="slider-content">
-							<h2 class="slider-content-title">Lorem Ipsum Dolor</h2>
-							<h3 class="slider-content-subtitle">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
-							<p>Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+    	<div class="wrapper" href="javascript:PopUpHde()">
+	    	<div class="wrapper-header">
+	    		<header class="header clearfix">
+	    			<a href="#" class="header-logo"></a>
+	    			<nav class="nav">
+	    				<ul>
+	    					<li class="nav-item"><a href="javascript:PopUpShow()" alt=""><span>Home</span></a></li><li class="nav-item"><a href="#" alt=""><span>About</span></a></li><li class="nav-item"><a href="#" alt=""><span>Blog</span></a></li><li class="nav-item"><a href="#" alt=""><span>Products</span></a></li><li class="nav-item"><a href="#" alt=""><span>Lorem Ipsum</span></a></li><li class="nav-item"><a href="#" alt=""><span>Dolor Sit Amet</span></a></li>
+	    				</ul>
+	    			</nav>
+	    			<div class="nav-popup" id="popup1">
+	    				<ul>
+	    					<li class="nav-item"><a href="#" alt=""><span>Home</span></a></li><li class="nav-item"><a href="#" alt=""><span>About</span></a></li><li class="nav-item"><a href="#" alt=""><span>Blog</span></a></li><li class="nav-item"><a href="#" alt=""><span>Products</span></a></li><li class="nav-item"><a href="#" alt=""><span>Lorem Ipsum</span></a></li><li class="nav-item"><a href="#" alt=""><span>Dolor Sit Amet</span></a></li>
+	    				</ul>	
+	    			</div>
+	    		</header>
+	    		<section class="slider">
+					<div class="wrapper-slider">
+						<span class="scrollbar-left"></span>
+						<div class="slider-content-photo">
+							<div class="slider-content">
+								<h2 class="slider-content-title">Lorem Ipsum Dolor</h2>
+								<h3 class="slider-content-subtitle">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
+								<p>Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+							</div>
+							<img src="img/Iphone.png" class="slider-photo">
 						</div>
-						<img src="img/Iphone.png" class="slider-photo">
-					</div>
-					<div class="clear"></div>
-					<span class="scrollbar-right"></span>
-				</div>		
-	    		<div class="slider-nav clearfix">
-					<ul>
-						<li><a class="nav-pagination-item" href="#" alt=""></a></li>
-						<li><a class="nav-pagination-item" href="#" alt=""></a></li>
-						<li><a class="nav-pagination-item" href="#" alt=""></a></li>
-						<li><a class="nav-pagination-item" href="#" alt=""></a></li>
-					</ul>	
-	    		</div>
-    		</section>
-    	</div>
-    	<section class="wrapper-content">	
-			<section class="wrapper-about-company">
-				<div class="about-company">
-					<ul class="clearfix">
-						<li class="clearfix">
-							<div class="about-company-sprite-settings"><span class="about-company-sprite"></span></div>
-							<div class="about-company-content">
-								<h4 class="about-company-title">ABOUT OUR COMPANY</h4>
-								<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
-								<a class="more"href="#">READ MORE</a>
-								<div class="clear"></div>
-							</div>
-						</li>
-						<li class="clearfix">
-							<div class="about-company-sprite-news"><span class="about-company-sprite"></span></div>
-							<div class="about-company-content">
-								<h4 class="about-company-title">ABOUT OUR COMPANY</h4>
-								<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
-								<a class="more"href="#">READ MORE</a>
-								<div class="clear"></div>
-							</div>
-						</li>
-						<li class="clearfix">
-							<div class="about-company-sprite-music"><div class="clear"></div><span class="about-company-sprite"></span></div>
-							<div class="about-company-content">
-								<h4 class="about-company-title">ABOUT OUR COMPANY</h4>
-								<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
-								<a class="more" href="#">READ MORE</a>
-								<div class="clear"></div>
-							</div>
-						</li>
-		    		</ul>
-	    		</div>
-	    	</section>
-	    	<div class="clear"></div>
-	    	<section class="wrapper-comment">
-	    		<div class="comment clearfix">
-		    		<div class="comment-author">
-		    			<div class="comment-author-content">
-			    			<div>
-				    			<img src="img/cofinder.png" class="pingbuller-cofinder"></span>
-				    			<h4 class="comment-title">PingbulLer
-				    				<span class="title-color-accent">starts here</span>
-				    			</h4>
-				    			<p class="content-text">&quot;Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.&quot;</p>
+						<div class="clear"></div>
+						<span class="scrollbar-right"></span>
+					</div>		
+		    		<div class="slider-nav clearfix">
+						<ul>
+							<li><a class="nav-pagination-item" href="#" alt=""></a></li>
+							<li><a class="nav-pagination-item" href="#" alt=""></a></li>
+							<li><a class="nav-pagination-item" href="#" alt=""></a></li>
+							<li><a class="nav-pagination-item" href="#" alt=""></a></li>
+						</ul>	
+		    		</div>
+	    		</section>
+	    	</div>
+	    	<section class="wrapper-content">	
+				<section class="wrapper-about-company">
+					<div class="about-company">
+						<ul class="clearfix">
+							<li class="clearfix">
+								<div class="about-company-sprite-settings"><span class="about-company-sprite"></span></div>
+								<div class="about-company-content">
+									<h4 class="about-company-title">ABOUT OUR COMPANY</h4>
+									<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
+									<a class="more"href="#">READ MORE</a>
+									<div class="clear"></div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="about-company-sprite-news"><span class="about-company-sprite"></span></div>
+								<div class="about-company-content">
+									<h4 class="about-company-title">ABOUT OUR COMPANY</h4>
+									<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
+									<a class="more"href="#">READ MORE</a>
+									<div class="clear"></div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="about-company-sprite-music"><div class="clear"></div><span class="about-company-sprite"></span></div>
+								<div class="about-company-content">
+									<h4 class="about-company-title">ABOUT OUR COMPANY</h4>
+									<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
+									<a class="more" href="#">READ MORE</a>
+									<div class="clear"></div>
+								</div>
+							</li>
+			    		</ul>
+		    		</div>
+		    	</section>
+		    	<div class="clear"></div>
+		    	<section class="wrapper-comment">
+		    		<div class="comment clearfix">
+			    		<div class="comment-author">
+			    			<div class="comment-author-content">
+				    			<div>
+					    			<img src="img/cofinder.png" class="pingbuller-cofinder"></span>
+					    			<h4 class="comment-title">PingbulLer
+					    				<span class="title-color-accent">starts here</span>
+					    			</h4>
+					    			<p class="content-text">&quot;Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.&quot;</p>
+					    		</div>
+				    			<span class="triangle"></span>
 				    		</div>
-			    			<span class="triangle"></span>
+				    		<nav class="slider-nav nav-light">
+								<ul>
+									<li><a class="nav-pagination-item" href="#" alt=""></a></li><li><a class="nav-pagination-item" href="#" alt=""></a></li><li><a class="nav-pagination-item" href="#" alt=""></a></li><li><a class="nav-pagination-item" href="#" alt=""></a></li>
+								</ul>	
+				    		</nav>
 			    		</div>
-			    		<nav class="slider-nav nav-light">
-							<ul>
-								<li><a class="nav-pagination-item" href="#" alt=""></a></li><li><a class="nav-pagination-item" href="#" alt=""></a></li><li><a class="nav-pagination-item" href="#" alt=""></a></li><li><a class="nav-pagination-item" href="#" alt=""></a></li>
-							</ul>	
-			    		</nav>
+			    		<div class="comment-text">
+			    			<h4 class="comment-title">RECENT UPDATES</h4>
+			    			<ul>
+			    				<li class="clearfix">
+			    					<span class="wrapper-marker"><img src="img/first-marker.png" class="first-marker"></span>
+			    					<div class="recent-news">
+			    						<h5>Nunc turpis neque feugiat eget</h5>
+			    						<p>Posted by Admin on March 13 2012 in Recent News</p>
+			    					</div>	
+			    				</li>
+			    				<li class="clearfix">
+			    					<span class="wrapper-marker"><img src="img/second-marker.png" class="second-marker"></span>
+			    					<div class="category">
+				    					<h5>Nunc turpis neque feugiat eget</h5>
+				    					<p>Posted by Admin on March 13 2012 in Category</p>
+			    					</div>
+			    				</li>
+			    				<li class="clearfix">
+			    					<span class="wrapper-marker"><img src="img/third-marker.png" class="third-marker"></span>
+			    					<div class="blog-updates">
+				    					<h5>Nunc turpis neque feugiat eget</h5>
+				    					<p>Posted by Admin on March 13 2012 in Blog Updates</p>
+			    					</div>
+			    				</li>
+			    			</ul>
+			    			<a class="more update-more" href="#">READ MORE HERE</a>
+			    			<div class="clear"></div>
+			    		</div>
+			    	</div>		
+		    	</section>
+		    	<section class="wrapper-logo-links">
+		    		<div class="logo-links">
+			    		<ul>
+			    			<li><a class="logo-bllabong" href="#"><img src="img/bllabong.png"></a></li>
+			    			<li><a class="logo-dg" href="#"><img src="img/dg.png"></a></li>
+			    			<li><a class="logo-tree" href="#"><img src="img/tree.png"></a></li>
+			    			<li><a class="logo-awsm" href="#"><img src="img/awsm.png"></a></li>
+			    			<li ><a class="logo-rvca" href="#"><img src="img/rvca.png"></a></li>
+			    			<li><a class="logo-vonzipper" href="#"><img src="img/vonzipper.png"></a></li>
+			    		</ul>
 		    		</div>
-		    		<div class="comment-text">
-		    			<h4 class="comment-title">RECENT UPDATES</h4>
-		    			<ul>
-		    				<li class="clearfix">
-		    					<span class="wrapper-marker"><img src="img/first-marker.png" class="first-marker"></span>
-		    					<div class="recent-news">
-		    						<h5>Nunc turpis neque feugiat eget</h5>
-		    						<p>Posted by Admin on March 13 2012 in Recent News</p>
-		    					</div>	
-		    				</li>
-		    				<li class="clearfix">
-		    					<span class="wrapper-marker"><img src="img/second-marker.png" class="second-marker"></span>
-		    					<div class="category">
-			    					<h5>Nunc turpis neque feugiat eget</h5>
-			    					<p>Posted by Admin on March 13 2012 in Category</p>
-		    					</div>
-		    				</li>
-		    				<li class="clearfix">
-		    					<span class="wrapper-marker"><img src="img/third-marker.png" class="third-marker"></span>
-		    					<div class="blog-updates">
-			    					<h5>Nunc turpis neque feugiat eget</h5>
-			    					<p>Posted by Admin on March 13 2012 in Blog Updates</p>
-		    					</div>
-		    				</li>
-		    			</ul>
-		    			<a class="more update-more" href="#">READ MORE HERE</a>
-		    			<div class="clear"></div>
+		    	</section>
+		    	<section class="wrapper-comments-news">
+		    		<div class="comments-news clearfix">
+		    			<div class="company-info">
+		    				<h1>PIGBULL<span>ER</span></h1>
+		    				<p class="copyright">Copyright 2013, Pingbull AS</p>
+		    				<p class="content-text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pul-</p>
+		    			</div>
+		    			<div class="comments">
+		    				<h4>RECENT COMMENTS</h4>
+		    				<p class="content-text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis</p>
+		    			</div>
+		    			<div class="news">
+		    				<h4>NEWS CATEGORIES</h4>
+		    				<p class="content-text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis</p>
+		    			</div>
 		    		</div>
-		    	</div>		
+		    	</section>
 	    	</section>
-	    	<section class="wrapper-logo-links">
-	    		<div class="logo-links">
-		    		<ul>
-		    			<li><a class="logo-bllabong" href="#"><img src="img/bllabong.png"></a></li>
-		    			<li><a class="logo-dg" href="#"><img src="img/dg.png"></a></li>
-		    			<li><a class="logo-tree" href="#"><img src="img/tree.png"></a></li>
-		    			<li><a class="logo-awsm" href="#"><img src="img/awsm.png"></a></li>
-		    			<li ><a class="logo-rvca" href="#"><img src="img/rvca.png"></a></li>
-		    			<li><a class="logo-vonzipper" href="#"><img src="img/vonzipper.png"></a></li>
-		    		</ul>
-	    		</div>
-	    	</section>
-	    	<section class="wrapper-comments-news">
-	    		<div class="comments-news clearfix">
-	    			<div class="company-info">
-	    				<h1>PIGBULL<span>ER</span></h1>
-	    				<p class="copyright">Copyright 2013, Pingbull AS</p>
-	    				<p class="content-text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pul-</p>
-	    			</div>
-	    			<div class="comments">
-	    				<h4>RECENT COMMENTS</h4>
-	    				<p class="content-text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis</p>
-	    			</div>
-	    			<div class="news">
-	    				<h4>NEWS CATEGORIES</h4>
-	    				<p class="content-text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis</p>
-	    			</div>
-	    		</div>
-	    	</section>
-    	</section>
-    	<footer class="wrapper-footer">
-    		<section class="footer">
-    			<nav class="nav">
-    				<ul>
-    					<li class="nav-item footer-nav-item"><a href="#" alt="">Home</a></li><li class="nav-item footer-nav-item"><a href="#" alt="">About</a></li><li class="nav-item footer-nav-item"><a href="#" alt="">Blog</a></li><li class="nav-item footer-nav-item"><a href="#" alt="">Products</a></li><li class="nav-item footer-nav-item"><a href="#" alt="">Lorem Ipsum</a></li><li class="nav-item footer-nav-item"><a href="#" alt="">Dolor Sit Amet</a></li>
-    				</ul>
-    			</nav>
-    			<div class="clear"></div>
-    			<p class="designed">Designed by <span>Pingbull AS</span></p>
-    		</section>
-    	</footer>
-    	<div class="clear"></div>
+	    	<footer class="wrapper-footer">
+	    		<section class="footer">
+	    			<nav class="nav">
+	    				<ul>
+	    					<li class="nav-item footer-nav-item"><a href="#" alt="">Home</a></li><li class="nav-item footer-nav-item"><a href="#" alt="">About</a></li><li class="nav-item footer-nav-item"><a href="#" alt="">Blog</a></li><li class="nav-item footer-nav-item"><a href="#" alt="">Products</a></li><li class="nav-item footer-nav-item"><a href="#" alt="">Lorem Ipsum</a></li><li class="nav-item footer-nav-item"><a href="#" alt="">Dolor Sit Amet</a></li>
+	    				</ul>
+	    			</nav>
+	    			<div class="clear"></div>
+	    			<p class="designed">Designed by <span>Pingbull AS</span></p>
+	    		</section>
+	    	</footer>
+	    	<div class="clear"></div>
+    	</div>
+    	
     </body>
 </html>

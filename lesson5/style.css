@@ -40,7 +40,6 @@ ul {
 	width: 100%;
 	height: 35px;
 	background: url(img/menuimage.png) 100% 100% repeat-x;
-	
 	background-size: contain;
 }
 .header ul {
@@ -63,47 +62,56 @@ ul {
 	font: normal 14px 'helveticaneuelight', Tahoma, serif;
 	color: #60b5ed;
 }
-.header li a img {	
-	margin-bottom: 0;
-	padding-left: 18px;
-	padding-right: 10px;
-	padding-top: 0;
+.header li .flag:before {
+	content: "";	
+	margin-right: 10px;
 	display: inline-block;
 	vertical-align: middle;
 	line-height: 35px;
-	border-left: solid #56a2dc 1px;
+	background-image: url(img/flag.png); 
+	width: 24px;
+	height: 26px;
+
 }
-.header .flag {
+.header li .flag {
 	padding-top: 5px;
 	padding-right: 18px;
-	padding-left: 0px;
+	padding-left: 15px;
 	height: 30px;
 	color: #ffffff;
 }
-.header span {
+.header .v-line {
+	margin-top: 2px;
+	float: left;
+	display: inline-block;
+	height: 30px;
+	border-right: 1px solid #56a2dc;
+}
+.enter a {
 	text-decoration: underline;
 }
 .header li a:hover {
 	background-color: #4eabda;
 	color: #ffffff;
 }
-.header li:last-child {
+.header .enter {
+	font: normal 14px 'helveticaneuelight', Tahoma, serif;
 	text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
 	color: #ffffff;
 }
-.header li:last-child a {
+.header .enter a {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0;
 	display: inline-block;
+	height: 24px;
 	text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
 	color: #ffffff;
 }
-.header li:last-child {
+.header .enter {
 	border: 1px solid #52a0da;
-	margin-top: -2px;
 	padding-left: 12px;
-	padding-right: 14px;
+	padding-right: 12px;
 	line-height: 33px;
 	background: #1e5799; /* Old browsers */
 	background: -moz-linear-gradient(top,  #1e5799 0%, #51b1dc 0%, #207cca 100%, #2e7ac4 100%); /* FF3.6-15 */
@@ -111,29 +119,18 @@ ul {
 	background: linear-gradient(to bottom,  #1e5799 0%,#51b1dc 0%,#207cca 100%,#2e7ac4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */
 }
-.header li:last-child:hover a {
+.header .enter:hover a {
 	background: none;
 }
 .content {
-	margin: 0 auto;
-	position: relative;
-	z-index: 1;
-	height: 1028px;
-	width: 100%;
+	padding: 210px 0;
 	background: url(img/fontimage.png) 100% 100% no-repeat;
 	background-size: cover;
 }
 .content-inside {
 	margin: 0 auto;
-	position: absolute;
-	top: 0;
-    bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 560px;
-	height: 615px;
 	z-index: 2;
+	width: 560px;
 	text-align: center;
 	font: normal 14px 'helveticaneuelight', Tahoma, serif;
 	color: #999999;
@@ -263,7 +260,7 @@ input[type=checkbox]:checked + label:before {
 }
 input[type=submit] {
 	margin-top: 23px;
-	margin-bottom: 20px;
+	margin-bottom: 19px;
 	padding-left: 0;
 	width: 150px;
 	height: 35px;
@@ -287,6 +284,8 @@ input[type=submit]:hover {
 	box-shadow: none;
 }
 form p {
+	margin: 0 auto;
 	font-size: 11px;
 	line-height: 15px;
+	width: 325px;
 }

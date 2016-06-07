@@ -21,7 +21,6 @@ ul {
 }
 .footer {
 	margin: 0 auto;
-	width: 1000px;
 	line-height: 28px;
 	vertical-align: middle;
 	text-align: center;
@@ -86,19 +85,18 @@ ul {
 }
 .countres li {
 	float: left;
-	margin-left: 15px;
+	margin-left: 10px;
+	max-width: 47px;
 }
 .countres img {
-	display: block;
+	display: inline-block;
+	text-align: center;
 }
 .countres a {
 	display: block;
 	text-align: center;
 	font: normal 10px Tahoma;
 	color: #128aa7;
-}
-.countres span {
-	margin-left: -12px;
 }
 .clearfix:after {    
 	content: ".";
@@ -111,13 +109,14 @@ ul {
 	zoom: 1;
 }
 .beachphoto {
-	height: 235px;
 	border-top: solid 1px #128aa7;
 	border-bottom: solid 1px #138aa7;
 	padding-bottom: 0;
 }
-.menu {
-	width: 1000px;	
+.beachphoto img {
+	display: block;
+}
+.menu {	
 	border-top: 1px solid #cacbcb;
 	border-bottom: 1px solid #000000;
 	text-align: center;
@@ -185,26 +184,35 @@ ul {
 }
 .content {
 	width: 1000px;
-	background-image: url(img/backgroundcontent.png);
-	background-repeat: repeat-y;
+	overflow: hidden;
 	}
 .info {
-	width: 175px;
+	width: 174px;
 	float: left;
+	background: #edeef0;
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
+	border-right: 1px solid #c7cacf;
 }
 .maincontent {
 	width: 580px;
 	float: left;
+	background: #ffffff;
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
 }
 .news {
-	width: 175px;
+	width: 174px;
 	float: left;
+	background: #edeef0;
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
+	border-left: 1px solid #c7cacf;
 }
 .info, .news {
-	margin-top: 6px;
-	margin-right: 20px;
-	margin-left: 15px;
-	margin-bottom: 7px;
+	padding-top: 6px;
+	padding-right: 20px;
+	padding-left: 15px;
 }
 .content h3 {
 	text-align: center;
@@ -215,4 +223,5 @@ ul {
 	padding-top: 5px;
 	font: normal 14px/24px Tahoma;
 	color: #424c43;
+	padding-bottom: 7px;
 }

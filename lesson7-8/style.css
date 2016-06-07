@@ -79,6 +79,9 @@ li {
 .nav {
 	float: right;
 }
+.nav-popup {
+	display: none;
+}
 .header .nav {
 	margin-top: -2px;
 }
@@ -421,6 +424,7 @@ h4 {
 }
 .logo-links ul li {
 	display: inline-block;
+	vertical-align: middle;
 	line-height: 120px;
 	margin-right: 8.2%;
 }
@@ -432,9 +436,7 @@ h4 {
 	vertical-align: middle;
 }
 .logo-links img {
-	display: inline-block;
-	line-height: 120px;
-	vertical-align: middle;
+	display: block;
 }
 .logo-bllabong {
 	width: 70px;
@@ -737,6 +739,10 @@ h4 {
 		float: none;
 		text-align: center;
 	}
+	.nav-popup {
+		display: block;
+		text-align: center;
+	}
 	.slider-content-title {
 		font-size: 36px;
 		line-height: 36px;
@@ -923,13 +929,23 @@ h4 {
 		line-height: normal;
 	}
 }
-@media (min-width: 480px) and (max-width: 767px){	
+@media (max-width: 767px){	
 	.header {
 		margin-bottom: 95px;
 		position: relative;
 		padding-bottom: 0;
 	}
-	.header .nav {
+	.nav li {
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	.nav :first-child {
+		display: inline;
+		text-align: center;
+		padding: 0 3px 3px 3px;
+	}
+	.header .nav-popup {
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -943,25 +959,25 @@ h4 {
 		border-radius: 7px;
 		background-color: rgba(54,41,62,0.9);
 	}
-	.header .nav-item {
+	.nav-popup .nav-item {
 		margin: 0;
 		display: block;	
 		height: 40px;	
 		border-top: solid 1px #3f3247;
 		border-bottom: solid 1px #36283e;
 	}
-	.header .nav-item:last-child {
+	.nav-popup .nav-item:last-child {
 		border-bottom: none;
 	}
-	.header .nav a {
+	.header .nav-popup a {
 		padding: 0;
 		display: block;
 		line-height: 38px;
 	}
-	.header .nav-item a:hover {
+	.nav-popup .nav-item a:hover {
 		background: rgba(0,0,0,0.3);
 	} 
-	.header .nav a:active span {
+	.nav-popup .nav a:active span {
 		display: inline-block;
 		padding-top: 13px;
 		padding-bottom: 2px;	
@@ -970,10 +986,10 @@ h4 {
 		line-height: 24px;
 		border-bottom: solid 2px  #edbfff;
 	}
-	.header .nav a:active {
+	.header .nav-popup a:active {
 		min-height: 45px;
 	}
-	.header .nav li:active {
+	.header .nav-popup li:active {
 		min-height: 45px;
 	}
 }
@@ -1004,6 +1020,9 @@ h4 {
 	}
 	.nav-item a:hover {
 		border-bottom-width: 2px;
+	}
+	.header .nav-popup {
+		top: 135px;
 	}
 	.slider-photo {
 		display: none;

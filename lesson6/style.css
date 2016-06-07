@@ -420,13 +420,10 @@ ul li a:hover .marker:before {
 .right-bar .catalog {
 	margin-right: 7px;
 }
-.right-bar h5:first-child {
-	margin-top: 15px;
-}
 .right-bar h5 {
 	margin-left: 15px;
-	margin-top: 22px;
-	margin-bottom: 7px;
+	margin-top: 15px;
+	margin-bottom: 5px;
 	width: 135px;
 }
 .right-bar input, .right-bar label {
@@ -436,11 +433,9 @@ ul li a:hover .marker:before {
 	color: #465961;
 }
 .right-bar button {
-	margin-left: 23px;
+	margin-left: 25px;
 }
-.right-bar input + .right-bar h5 {
-	margin-top: 14px;
-}
+
 input[type="checkbox"] {
 	display: none;
 }
@@ -469,12 +464,12 @@ input[type=checkbox]:checked + label:before {
 }
 .checkbox {
 	margin-left: 0;
-	margin-bottom: -7px;
+	margin-bottom: 10px;
 }
 .right-bar button {
-	margin-top: 12px;
-	border-radius: 9px;
-	width: 80px;
+	margin-top: 10px;
+	border-radius: 10px;
+	width: 81px;
 	height: 25px;
 	border-top: 1px solid #7a95a1;
 	border-bottom: 1px solid #697b8b;
